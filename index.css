@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: yellow;
+    font-family: cursive;
+}
+.form{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+h4{
+    text-align: right;
+}
+h2{
+    text-align: center;
+}
+.form input{
+    display: block;
+    width: 100%;
+    font-size:25px ;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px red;
+    border-radius:15px ;
+    font-family: cursive;
+    font-size: 25px;
+    
+    
+}
+button {
+    background-color: #fbfbfb;
+    color: #000000;
+    border: 3px solid red;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.3) ;
+    font-family: cursive;
+}
+button:hover{
+    background-color:rgb(217, 90, 90);
+    cursor: pointer;
+}
+/* Styles for screens wider than 1024px (large desktops) */
+@media (min-width: 1025px) {
+    .form {
+      width: 500px; /* Large form size */
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .form input {
+      font-size: 30px; /* Larger font size for desktop */
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Styles for screens between 769px and 1024px (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .form {
+      width: 400px; /* Medium size form */
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .form input {
+      font-size: 24px; /* Medium font size for tablets */
+      padding: 12px;
+    }
+  
+    button {
+      font-size: 18px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Styles for screens between 480px and 768px (mobile landscape) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .form {
+      width: 320px; /* Smaller form for tablets and large phones */
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form input {
+      font-size: 20px; /* Smaller font size for phones */
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 7px 12px;
+    }
+  }
+  
+  /* Styles for screens smaller than 480px (mobile portrait) */
+  @media (max-width: 480px) {
+    .form {
+      width: 280px; /* Smallest form size */
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .form input {
+      font-size: 18px; /* Small font size for mobile */
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 5px 10px;
+    }
+  }
+  
